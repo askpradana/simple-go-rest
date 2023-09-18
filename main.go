@@ -1,7 +1,7 @@
 package main
 
 import (
-	"belajar/kedua/cmd/router"
+	"belajar/kedua/router"
 	"database/sql"
 	"fmt"
 	"log"
