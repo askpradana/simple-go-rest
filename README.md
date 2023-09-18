@@ -1,4 +1,4 @@
-# Simple REST API with golang(Unnamed)
+# Simple REST API with golang(Still don't have name)
 
 A simple Golang web application that demonstrates handling HTTP requests (GET, POST, PUT, DELETE) and connecting to a local MySQL database.
 
@@ -63,23 +63,44 @@ You can test the API endpoints using tools like `curl`, `Postman`, or by creatin
 curl http://localhost:8000/users
 ```
 
+<img src='media/go-get.png' width=50%>
+
+
 #### POST /users/add
 
 ```sh
 curl -X POST -H "Content-Type: application/json" -d '{"name":"John Doe","age":30}' http://localhost:8000/users/add
+
 ```
+<img src='media/go-post.png' width=50%>
 
 #### PUT /users/edit
 
 ```sh
 curl -X PUT -H "Content-Type: application/json" -d '{"ID":1,"name":"Updated Name","age":25}' http://localhost:8000/users/edit
 ```
+<img src='media/go-put.png' width=50%>
+
+Before(hint: from john williams to gerhard   )
+
+<img src='media/go-put-before.png' width=50%>
+
+After
+
+<img src='media/go-put-after.png' width=50%>
+
 
 #### DELETE /users/delete
 
 ```sh
 curl -X DELETE http://localhost:8000/users/delete?id=1
 ```
+
+<img src='media/go-delete.png' width=50%>
+
+Table after delete (hint: there are no id 14 anymore)
+
+<img src='media/go-delete-after.png' width=50%>
 
 ## Contributing
 
